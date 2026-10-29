@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import ServiceCard from '@/components/cards/ServiceCard';
 import { siteMap, type CyberVaultServicesData } from '@/data';
+import { useContactModal } from '@/components/modal/GetInTouchModal';
 
 const serviceIconMap: Record<string, React.ComponentType<{ className?: string }>> = {
     Bug,
@@ -29,8 +30,6 @@ export interface ServiceItem {
     description: string;
     icon: React.ComponentType<{ className?: string }>;
     isHighlighted?: boolean;
-    detailedFeatures: string[];
-    benefits: string;
 }
 
 interface ServiceSectionProps {
@@ -41,27 +40,28 @@ interface ServiceSectionProps {
 export default function ServicesSection({ data: propData, onEnquireClick }: ServiceSectionProps = {}) {
     const data = propData || siteMap.services;
     const router = useRouter();
+    const { openModal } = useContactModal();
 
     const handleCardClick = (service: ServiceItem) => {
         if (onEnquireClick) {
             onEnquireClick(service.title);
         } else {
-            router.push(`/services/${service.id}`);
+            openModal(service.title);
         }
     };
 
     return (
-        <section className="relative py-8 lg:py-14 bg-white overflow-hidden font-sans">
+        <section id="services" className="relative py-8 lg:py-14 bg-white overflow-hidden font-sans">
 
-            {/* Background Ambient Aesthetics */}
-            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-blue-100/40 rounded-full blur-[140px] pointer-events-none" />
-            <div className="absolute bottom-10 -right-20 w-96 h-96 bg-cyan-100/50 rounded-full blur-3xl pointer-events-none" />
+            {/* Ambient background */}
+            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-red-100/40 rounded-full blur-[140px] pointer-events-none" />
+            <div className="absolute bottom-10 -right-20 w-96 h-96 bg-rose-100/40 rounded-full blur-3xl pointer-events-none" />
 
             <div className="max-w-[1380px] lg:w-[97%] xl:w-[95%] w-full mx-auto px-4 relative z-10">
 
                 <div className="text-center max-w-4xl mx-auto mb-8 space-y-3">
 
-                    {/* Centered Tagline with Flanking Gradient Lines */}
+                    {/* Tagline lines */}
                     <motion.div
                         initial={{ opacity: 0, y: -15 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -69,14 +69,14 @@ export default function ServicesSection({ data: propData, onEnquireClick }: Serv
                         transition={{ duration: 0.5 }}
                         className="inline-flex items-center justify-center space-x-3"
                     >
-                        <div className="w-12 sm:w-12 h-[2px] bg-gradient-to-r from-transparent via-blue-500 to-blue-600 rounded-full" />
-                        <span className="text-xs sm:text-sm uppercase font-bold tracking-[0.25em] text-blue-600">
+                        <div className="w-12 sm:w-12 h-[2px] bg-gradient-to-r from-transparent via-rose-500 to-red-600 rounded-full" />
+                        <span className="text-xs sm:text-sm uppercase font-bold tracking-[0.25em] text-red-600">
                             {data.tagline}
                         </span>
-                        <div className="w-8 sm:w-12 h-[2px] bg-gradient-to-r from-blue-600 via-blue-500 to-transparent rounded-full" />
+                        <div className="w-8 sm:w-12 h-[2px] bg-gradient-to-r from-red-600 via-rose-500 to-transparent rounded-full" />
                     </motion.div>
 
-                    {/* Main Section Headline */}
+                    {/* Section headline */}
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -85,13 +85,13 @@ export default function ServicesSection({ data: propData, onEnquireClick }: Serv
                         className="text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight leading-[1.2]"
                     >
                         {data.title.prefix}{' '}
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-rose-600 to-red-500 font-semibold">
                             {data.title.highlight}
                         </span>{' '}
                         {data.title.suffix}
                     </motion.h2>
 
-                    {/* Subtitle */}
+                    {/* Subtitle text */}
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}

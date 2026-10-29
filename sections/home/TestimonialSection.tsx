@@ -51,19 +51,19 @@ export default function TestimonialSection({ data: propData }: TestimonialSectio
     }, [api]);
 
     return (
-        <section className="relative w-full bg-[#f8fbff] py-8 lg:py-14 overflow-hidden font-sans">
+        <section id="testimonials" className="relative w-full bg-[#fdf8f8] py-8 lg:py-14 overflow-hidden font-sans">
             <div className="max-w-[1380px] lg:w-[97%] xl:w-[95%] w-full mx-auto px-4">
                 <div className="flex items-center justify-center space-x-3 mb-3">
-                    <span className="w-12 h-[2px] bg-gradient-to-r from-transparent to-blue-600 rounded-full" />
-                    <span className="text-xs sm:text-sm font-bold tracking-wider text-blue-900 uppercase">
+                    <span className="w-12 h-[2px] bg-gradient-to-r from-transparent to-red-600 rounded-full" />
+                    <span className="text-xs sm:text-sm font-bold tracking-wider text-red-900 uppercase">
                         {data.tagline}
                     </span>
-                    <span className="w-12 h-[2px] bg-gradient-to-l from-transparent to-blue-600 rounded-full" />
+                    <span className="w-12 h-[2px] bg-gradient-to-l from-transparent to-red-600 rounded-full" />
                 </div>
 
                 <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl text-[#091122] tracking-tight mb-2">
                     {data.title.prefix}{" "}
-                    <span className="bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-red-600 to-rose-500 bg-clip-text text-transparent font-semibold">
                         {data.title.highlight}
                     </span>
                 </h2>
@@ -88,20 +88,22 @@ export default function TestimonialSection({ data: propData }: TestimonialSectio
                                     key={testimonial.id}
                                     className="pl-4 sm:pl-6 basis-full lg:basis-1/2"
                                 >
-                                    <TestimonialCard item={testimonial} />
+                                    <TestimonialCard
+                                        item={testimonial}
+                                    />
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
 
-                        {/* Navigation Buttons */}
+                        {/* Navigation buttons */}
                         <div className="hidden sm:block">
-                            <CarouselPrevious className="-left-4 lg:-left-6 w-11 h-11 bg-white text-blue-600 shadow-lg border-slate-100 hover:bg-blue-600 hover:text-white transition-all duration-300" />
-                            <CarouselNext className="-right-4 lg:-right-6 w-11 h-11 bg-white text-blue-600 shadow-lg border-slate-100 hover:bg-blue-600 hover:text-white transition-all duration-300" />
+                            <CarouselPrevious className="-left-4 lg:-left-6 w-11 h-11 bg-white text-red-600 shadow-lg border-slate-100 hover:bg-red-600 hover:text-white transition-all duration-300" />
+                            <CarouselNext className="-right-4 lg:-right-6 w-11 h-11 bg-white text-red-600 shadow-lg border-slate-100 hover:bg-red-600 hover:text-white transition-all duration-300" />
                         </div>
                     </Carousel>
                 </div>
 
-                {/* Carousel Pagination Dots */}
+                {/* Pagination dots */}
                 {count > 1 && (
                     <div className="flex items-center justify-center space-x-2.5 mt-2 lg:mt-4">
                         {Array.from({ length: count }).map((_, idx) => (
@@ -110,8 +112,8 @@ export default function TestimonialSection({ data: propData }: TestimonialSectio
                                 onClick={() => api?.scrollTo(idx)}
                                 aria-label={`Go to slide ${idx + 1}`}
                                 className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${current === idx
-                                    ? "w-7 bg-blue-600"
-                                    : "w-2.5 bg-blue-200 hover:bg-blue-300"
+                                    ? "w-7 bg-red-600"
+                                    : "w-2.5 bg-red-200 hover:bg-red-300"
                                     }`}
                             />
                         ))}

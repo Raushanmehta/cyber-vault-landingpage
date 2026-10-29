@@ -31,100 +31,12 @@
                 "component": "CyberVaultProcess1"
               },
               {
-                "key": "whyChooseUs",
-                "component": "CyberVaultWhyChooseUs1"
-              },
-              {
                 "key": "testimonial",
                 "component": "CyberVaultTestimonial1"
               },
               {
-                "key": "blog",
-                "component": "CyberVaultBlog1"
-              }
-            ]
-          },
-          "about": {
-            "components": [
-              {
-                "key": "pageTopSection",
-                "component": "CyberVaultPageTop1"
-              },
-              {
-                "key": "about",
-                "component": "CyberVaultAbout1"
-              },
-              {
-                "key": "whyChooseUs",
-                "component": "CyberVaultWhyChooseUs1"
-              },
-              {
-                "key": "ourImpact",
-                "component": "CyberVaultOurImpact1"
-              },
-              {
-                "key": "testimonial",
-                "component": "CyberVaultTestimonial1"
-              }
-            ]
-          },
-          "services": {
-            "components": [
-              {
-                "key": "pageTopSection",
-                "component": "CyberVaultPageTop1"
-              },
-              {
-                "key": "services",
-                "component": "CyberVaultServices1"
-              }
-            ]
-          },
-          "portfolio": {
-            "components": [
-              {
-                "key": "pageTopSection",
-                "component": "CyberVaultPageTop1"
-              },
-              {
-                "key": "portfolio",
-                "component": "CyberVaultPortfolio1"
-              }
-            ]
-          },
-          "blog": {
-            "components": [
-              {
-                "key": "pageTopSection",
-                "component": "CyberVaultPageTop1"
-              },
-              {
-                "key": "blog",
-                "component": "CyberVaultBlog1"
-              }
-            ]
-          },
-          "contact": {
-            "components": [
-              {
-                "key": "pageTopSection",
-                "component": "CyberVaultPageTop1"
-              },
-              {
-                "key": "contact",
-                "component": "CyberVaultContact1"
-              }
-            ]
-          },
-          "get-a-quote": {
-            "components": [
-              {
-                "key": "pageTopSection",
-                "component": "CyberVaultPageTop1"
-              },
-              {
-                "key": "getAQuote",
-                "component": "CyberVaultGetAQuote1"
+                "key": "faq",
+                "component": "CyberVaultFaq1"
               }
             ]
           }
@@ -137,9 +49,9 @@
           "CyberVaultTopbar1": {
             "notification": {
               "icon": "ShieldCheck",
-              "text": "We are always ready to protect your digital world.",
+              "text": "Active Threat Level: ZERO-TRUST SHIELD ONLINE  monitoring 24/7.",
               "link": {
-                "label": "Contact Now",
+                "label": "",
                 "href": "/contact"
               }
             },
@@ -152,25 +64,25 @@
                 "name": "Twitter",
                 "icon": "BsTwitter",
                 "href": "https://twitter.com",
-                "color": "#38bdf8"
+                "color": "#ef4444"
               },
               {
                 "name": "Facebook",
                 "icon": "FaFacebook",
                 "href": "https://facebook.com",
-                "color": "#60a5fa"
+                "color": "#dc2626"
               },
               {
                 "name": "LinkedIn",
                 "icon": "LiaLinkedin",
                 "href": "https://linkedin.com",
-                "color": "#38bdf8"
+                "color": "#f43f5e"
               },
               {
                 "name": "Instagram",
                 "icon": "BsInstagram",
                 "href": "https://instagram.com",
-                "color": "#f472b6"
+                "color": "#fb7185"
               }
             ]
           }
@@ -180,7 +92,7 @@
         "variants": {
           "CyberVaultNavbar1": {
             "logo": {
-              "src": "/logo/logo-black.webp",
+              "src": "/logo/logo-blacks.webp",
               "alt": "CyberVault Logo",
               "width": 220,
               "height": 220,
@@ -194,33 +106,33 @@
               },
               {
                 "label": "About Us",
-                "href": "/about",
+                "href": "#about",
                 "icon": "Info"
               },
               {
                 "label": "Services",
-                "href": "/services",
+                "href": "#services",
                 "icon": "Wrench"
               },
               {
-                "label": "Portfolio",
-                "href": "/portfolio",
+                "label": "Process",
+                "href": "#process",
                 "icon": "Briefcase"
               },
               {
-                "label": "Blogs",
-                "href": "/blog",
-                "icon": "BookOpen"
+                "label": "Testimonials",
+                "href": "#testimonials",
+                "icon": "Briefcase"
               },
               {
-                "label": "Contact Us",
-                "href": "/contact",
-                "icon": "Mail"
+                "label": "FAQs",
+                "href": "#faqs",
+                "icon": "HelpCircle"
               }
             ],
             "actionButton": {
               "label": "Get a Quote",
-              "href": "/get-a-quote",
+              "href": "#services",
               "icon": "ArrowRight"
             }
           }
@@ -230,40 +142,40 @@
         "variants": {
           "CyberVaultHero1": {
             "backgroundImage": {
-              "src": "/images/hero-banner-1.webp",
-              "alt": "Cyber Security Hero Banner"
+              "src": "/images/hero-crimson.jpg",
+              "alt": "Cyber Security Crimson Holographic Command"
             },
             "badge": {
               "icon": "Zap",
-              "text": "WELCOME TO CYBERVAULT"
+              "text": "AI-POWERED THREAT PROTOCOL"
             },
             "title": {
-              "prefix": "Your Partner in Total",
-              "highlight": "Cyber Security"
+              "prefix": "AI Powered Cyber",
+              "highlight": "Cyber Security Protocol"
             },
-            "description": "Protect your business from digital threats with cutting-edge cybersecurity solutions—24/7 monitoring, penetration testing, and expert-driven defense strategies.",
+            "description": "Insulate your enterprise perimeter with self-healing neural intrusion prevention, instantaneous zero-day neutralization, and automated red-team counter-measures.",
             "ctaButton": {
               "label": "Get a Quote",
-              "href": "/get-a-quote",
+              "href": "#services",
               "icon": "ArrowRight"
             },
             "trustBar": {
-              "ratingLabel": "Google Rating",
+              "ratingLabel": "Security Rating",
               "score": "5.0",
               "starsCount": 5,
-              "reviewPrefix": "Based on",
-              "reviewsCount": "23k Reviews"
+              "reviewPrefix": "Verified by",
+              "reviewsCount": "650+ Enterprises"
             },
             "floatingStats": [
               {
                 "icon": "FaShieldAlt",
-                "value": "99.9%",
-                "label": "Threat Intercept"
+                "value": "99.99%",
+                "label": "Breach Interception Rate"
               },
               {
                 "icon": "FaUserFriends",
-                "value": "23K",
-                "label": "Happy Customers"
+                "value": "< 1.2s",
+                "label": "Autonomous Threat TTR"
               }
             ]
           }
@@ -272,17 +184,17 @@
       "about": {
         "variants": {
           "CyberVaultAbout1": {
-            "tagline": "ABOUT US",
+            "tagline": "About Us",
             "title": {
-              "prefix": "Delivering end to end",
-              "highlight": "cyber security",
-              "suffix": "for businesses"
+              "prefix": "Engineering Autonomous",
+              "highlight": "Cyber Security Protocol",
+              "suffix": ""
             },
-            "description": "We provide advanced cybersecurity solutions to protect your business from evolving digital threats. Our focus is on securing your data, systems, and networks with proactive strategies, innovative technology, and expert support.",
+            "description": "We architect battle-hardened cyber defense fabrics engineered to withstand state-sponsored intrusions, and executes micro-containment in real time.",
             "images": {
               "primary": {
-                "src": "/images/about-1.jpg",
-                "alt": "Cyber Security Operations Center Room"
+                "src": "/images/about-crimson.jpg",
+                "alt": "Cyber Defense Specialist Analyzing Crimson Telemetry Streams"
               },
               "secondary": {
                 "src": "/images/about-2.jpg",
@@ -291,29 +203,29 @@
             },
             "experienceBadge": {
               "icon": "ShieldCheck",
-              "years": "25+",
-              "label": "Years Of Experience"
+              "years": "99.98%",
+              "label": "Zero-Day Mitigation Rate"
             },
             "features": [
               {
                 "icon": "ShieldCheck",
-                "title": "Proactive Threat Protection",
-                "description": "Detect and prevent threats before they impact your business."
+                "title": "Threat Hunting",
+                "description": "Deep packet neural models detecting payload detonation."
               },
               {
                 "icon": "Settings",
-                "title": "Advanced Security Solutions",
-                "description": "Tailored security strategies for your growing needs."
+                "title": "Micro-Segmented",
+                "description": "Per-workload cryptographic cyber security."
               },
               {
                 "icon": "Users",
-                "title": "Expert Security Team",
-                "description": "A team of certified professionals dedicated to your digital safety."
+                "title": "24/7 Red-Team",
+                "description": "Elite offensive and defensive cyber security for critical clusters."
               }
             ],
             "actionButton": {
-              "label": "More About Us",
-              "href": "/about",
+              "label": "About Us",
+              "href": "#about",
               "icon": "ArrowRight"
             }
           }
@@ -322,36 +234,36 @@
       "ourImpact": {
         "variants": {
           "CyberVaultOurImpact1": {
-            "backgroundImage": "/images/our-impact-banner.webp",
+            "backgroundImage": "/images/our-impact-crimson.jpg",
             "tagline": {
               "icon": "Activity",
-              "text": "OUR IMPACT"
+              "text": "GLOBAL THREAT INTELLIGENCE"
             },
             "title": {
-              "prefix": "Trusted by Businesses, Securing a Safer",
-              "highlight": "Digital Tomorrow"
+              "prefix": " Across Global",
+              "highlight": "High-Alert Perimeters"
             },
-            "description": "Our numbers reflect our commitment to delivering reliable, innovative, and result-driven cybersecurity solutions for businesses of all sizes.",
+            "description": "Telemetry from over 40 million active nodes continuously optimizes our neural defense mesh, stopping state-level adversary campaigns in their tracks.",
             "stats": [
               {
-                "id": "experience",
-                "numberValue": 25,
-                "suffix": "+",
-                "label": "Years of Experience",
-                "icon": "Users"
-              },
-              {
-                "id": "clients",
-                "numberValue": 500,
-                "suffix": "+",
-                "label": "Clients Protected",
+                "id": "attacks",
+                "numberValue": 18,
+                "suffix": "M+",
+                "label": "Attacks Blocked Daily",
                 "icon": "ShieldCheck"
               },
               {
-                "id": "projects",
-                "numberValue": 1200,
+                "id": "perimeters",
+                "numberValue": 650,
                 "suffix": "+",
-                "label": "Security Projects",
+                "label": "Enterprise Clouds Shielded",
+                "icon": "Users"
+              },
+              {
+                "id": "containment",
+                "numberValue": 99,
+                "suffix": ".99%",
+                "label": "Containment Reliability",
                 "icon": "Database"
               },
               {
@@ -359,7 +271,7 @@
                 "numberValue": 24,
                 "isCustomDisplay": true,
                 "customText": "24/7",
-                "label": "Threat Monitoring",
+                "label": "Active SOC Surveillance",
                 "icon": "Headphones"
               }
             ]
@@ -369,46 +281,41 @@
       "process": {
         "variants": {
           "CyberVaultProcess1": {
-            "tagBadge": "How It Works",
+            "tagBadge": "Our Process",
             "title": {
-              "prefix": "Step by Step Process Built for",
-              "highlight": "Stronger Digital Security"
+              "prefix": "The Three Phase ",
+              "highlight": "Cyber Security Architecture"
             },
-            "description": "From identifying vulnerabilities and assessing risks to implementing advanced security solutions and continuously monitoring threats.",
-            "contactButton": {
-              "label": "Contact Us",
-              "href": "/contact",
-              "icon": "ArrowUpRight"
-            },
+            "description": "From continuous surface reconnaissance to zero-trust micro-segmentation and autonomous continuous counter-measures.",
             "steps": [
               {
                 "stepNumber": "01",
-                "title": "Assess & Analyze",
-                "description": "We start by evaluating your current digital infrastructure to identify vulnerabilities, risks, and potential gaps.",
+                "title": "Recon & Surface Threat Modeling",
+                "description": "We conduct autonomous attack-surface mapping, vulnerability fuzzing, and telemetry audits to eliminate latent architectural backdoors.",
                 "icon": "Search",
                 "checkpoints": [
-                  "Identify vulnerabilities, risks, and gaps",
-                  "Analyze systems and security posture"
+                  "Automated attack-surface mapping & vulnerability fuzzing",
+                  "Audit cloud permissions & isolate latent architectural risks"
                 ]
               },
               {
                 "stepNumber": "02",
-                "title": "Implement & Secure",
-                "description": "Based on the assessment, we deploy advanced security solutions tailored to your business needs.",
+                "title": "Zero-Trust Hardening & Isolation",
+                "description": "Deploying cryptographic identity gates, dynamic micro-segmentation, and endpoint containment barriers across all workloads.",
                 "icon": "ShieldCheck",
                 "checkpoints": [
-                  "Deploy advanced cybersecurity solutions",
-                  "Configure and secure your environment"
+                  "Deploy workload-level micro-segmentation",
+                  "Enforce strict least-privilege IAM guardrails & encryption"
                 ]
               },
               {
                 "stepNumber": "03",
-                "title": "Monitor & Optimize",
-                "description": "We continuously monitor your systems and fine-tune security measures to stay ahead of emerging cyber threats.",
+                "title": "Autonomous Hunting & Active Defense",
+                "description": "Real-time AI threat hunting engines combined with 24/7 Tier-3 red-team response neutralize threats before lateral movement.",
                 "icon": "Settings",
                 "checkpoints": [
-                  "Continuous 24/7 monitoring and mitigation",
-                  "Regular optimization and updates"
+                  "Continuous live telemetry monitoring & anomaly containment",
+                  "Automated threat quarantine & resilience optimization"
                 ]
               }
             ]
@@ -418,1066 +325,103 @@
       "services": {
         "variants": {
           "CyberVaultServices1": {
-            "tagline": "OUR SERVICES",
+            "tagline": "Our Services",
             "title": {
-              "prefix": "Comprehensive",
-              "highlight": "Cyber Security",
-              "suffix": "Solutions"
+              "prefix": "Our ",
+              "highlight": "Cyber Security Solutions",
+              "suffix": ""
             },
-            "description": "We deliver advanced cybersecurity services to protect your business, data, and digital infrastructure from evolving threats.",
-            "sidebarCta": {
-              "badge": "Get In Touch",
-              "title": "Talk to Our",
-              "highlight": "Security Experts",
-              "description": "Have questions or need a customized solution? Our team is here to help you.",
-              "buttonText": "Let's Talk",
-              "buttonHref": "/get-a-quote",
-              "bgImage": "/images/cta-banner.jpg"
-            },
+            "description": "Shield your organization against weaponized exploits, lateral ransomware, and credential theft with unified zero-trust protection.",
             "servicesList": [
               {
                 "id": "threat-detection",
-                "title": "Threat Detection and Prevention",
-                "description": "Real-time monitoring and proactive measures to identify and stop threats before they impact your business.",
+                "title": "Autonomous Threat Hunting & AI SOC",
+                "description": "Continuous neural telemetry inspection and automated malware containment operating at microsecond latencies.",
                 "icon": "Bug",
-                "isHighlighted": false,
-                "bannerImage": {
-                  "src": "/images/service/threat-detection.webp",
-                  "alt": "Threat Detection and Prevention Center"
-                },
-                "detailedFeatures": [
-                  "24/7 Security Operations Center (SOC) Surveillance",
-                  "AI-Powered Anomaly & Intrusion Detection",
-                  "Proactive Behavioral Threat Hunting",
-                  "Automated Incident Alerting & Quarantine"
-                ],
-                "benefits": "Minimizes system downtime and detects zero-day vulnerabilities prior to exploitation.",
-                "pillars": [
-                  {
-                    "icon": "Shield",
-                    "title": "Real-Time Threat Hunting",
-                    "description": "Continuously scan network traffic and system telemetry to isolate malicious signatures instantly."
-                  },
-                  {
-                    "icon": "Monitor",
-                    "title": "24/7 SOC Surveillance",
-                    "description": "Dedicated cybersecurity specialists monitoring telemetry streams around the clock."
-                  },
-                  {
-                    "icon": "Settings",
-                    "title": "Automated Quarantine",
-                    "description": "Instantly isolate compromised nodes and neutralize zero-day exploits before propagation."
-                  }
-                ],
-                "overview": {
-                  "titlePrefix": "Continuous Threat Intelligence for",
-                  "titleHighlight": "Modern Enterprises",
-                  "paragraphs": [
-                    "Our Threat Detection and Prevention architecture combines artificial intelligence with human threat analysts to spot anomalies across all infrastructure layers.",
-                    "From zero-day vulnerabilities to distributed denial of service attempts, we neutralize risks before they disrupt your day-to-day operations or jeopardize critical business data."
-                  ],
-                  "image": {
-                    "src": "/images/service/cyber-analysts-monitoring-telemetry.webp",
-                    "alt": "Cyber Analysts Monitoring Telemetry"
-                  }
-                },
-                "keyBenefits": {
-                  "titlePrefix": "Key",
-                  "titleHighlight": "Benefits",
-                  "description": "Our proactive threat defense delivers unmatched peace of mind and operational resilience.",
-                  "items": [
-                    {
-                      "icon": "Shield",
-                      "title": "Zero-Day Mitigation",
-                      "description": "Identify unknown vulnerabilities through heuristic behavioural monitoring."
-                    },
-                    {
-                      "icon": "Database",
-                      "title": "Minimal Downtime",
-                      "description": "Protect vital databases and maintain uninterrupted business service."
-                    },
-                    {
-                      "icon": "Clock",
-                      "title": "Sub-Minute TTR",
-                      "description": "Dramatically lower time-to-respond with automated containment playbooks."
-                    },
-                    {
-                      "icon": "Users",
-                      "title": "Certified Analyst Backing",
-                      "description": "Direct line to elite threat researchers and incident handlers 24/7."
-                    }
-                  ]
-                }
+                "isHighlighted": false
               },
               {
                 "id": "endpoint-security",
-                "title": "Endpoint Security Solutions",
-                "description": "Protect your devices and endpoints with advanced security tools and continuous monitoring.",
+                "title": "Zero-Trust Endpoint Isolation (EDR/XDR)",
+                "description": "Military-grade device hardening, memory-injection prevention, and automated instant ransomware rollback.",
                 "icon": "Laptop",
-                "isHighlighted": false,
-                "bannerImage": {
-                  "src": "/images/service/endpoint-security.webp",
-                  "alt": "Endpoint Security Operations"
-                },
-                "detailedFeatures": [
-                  "Next-Gen Antivirus (NGAV) & EDR Integration",
-                  "Remote Mobile & Laptop Fleet Management",
-                  "Zero-Trust Device Access Control",
-                  "Ransomware Rollback Capabilities"
-                ],
-                "benefits": "Ensures absolute protection for remote and on-premise employee devices against modern malware.",
-                "pillars": [
-                  {
-                    "icon": "Shield",
-                    "title": "Real-Time Threat Protection",
-                    "description": "Block malware, ransomware, and advanced threats before they cause damage across devices."
-                  },
-                  {
-                    "icon": "Monitor",
-                    "title": "Complete Device Visibility",
-                    "description": "Gain full visibility and control over laptops, mobile devices, and server endpoints in real-time."
-                  },
-                  {
-                    "icon": "Settings",
-                    "title": "Automated Response",
-                    "description": "Detect and remediate suspicious endpoint activity with automated security playbooks."
-                  }
-                ],
-                "overview": {
-                  "titlePrefix": "Comprehensive Protection for Modern",
-                  "titleHighlight": "Work Environments",
-                  "paragraphs": [
-                    "Our endpoint security solutions are engineered to protect your organization's devices, data, and users from evolving cyber threats. With advanced threat detection, AI-powered analysis, and automated response capabilities, we help you mitigate risks and ensure business continuity.",
-                    "Whether your team works in the office, remotely, or across multiple locations, our solutions provide consistent and reliable security for all endpoints."
-                  ],
-                  "image": {
-                    "src": "/images/service/monitoring-center-operations.webp",
-                    "alt": "Monitoring Center Operations"
-                  }
-                },
-                "keyBenefits": {
-                  "titlePrefix": "Key",
-                  "titleHighlight": "Benefits",
-                  "description": "Our endpoint security solutions are built to give you more than just protection.",
-                  "items": [
-                    {
-                      "icon": "Shield",
-                      "title": "Reduced Security Risks",
-                      "description": "Minimize the chances of data breaches and system compromises on every endpoint."
-                    },
-                    {
-                      "icon": "Database",
-                      "title": "Centralized Management",
-                      "description": "Manage all company devices and policy compliance from a single unified portal."
-                    },
-                    {
-                      "icon": "Clock",
-                      "title": "Improved Efficiency",
-                      "description": "Automate threat detection and remediation to save IT resources."
-                    },
-                    {
-                      "icon": "Users",
-                      "title": "Scalable for Growing Teams",
-                      "description": "Easily provision protection for new team members and distributed workforces."
-                    }
-                  ]
-                }
+                "isHighlighted": false
               },
               {
                 "id": "network-defense",
-                "title": "Network Defense and Firewalls",
-                "description": "Strengthen your network with next-gen firewalls and advanced threat defense systems.",
+                "title": "Quantum-Resistant Perimeter & Firewalls",
+                "description": "Next-gen deep packet inspection, automated DDoS scrubbing grids, and cryptographically verified micro-segmentation.",
                 "icon": "Flame",
-                "isHighlighted": false,
-                "bannerImage": {
-                  "src": "/images/service/network-defense.webp",
-                  "alt": "Network Defense and Server Infrastructure"
-                },
-                "detailedFeatures": [
-                  "Next-Generation Firewall (NGFW) Deployment",
-                  "Deep Packet Inspection & Intrusion Prevention (IPS)",
-                  "Secure Multi-Site VPN Networks",
-                  "DDoS Attack Mitigation Infrastructure"
-                ],
-                "benefits": "Shields internal corporate networks from unauthorized external access and malicious bandwidth floods.",
-                "pillars": [
-                  {
-                    "icon": "Flame",
-                    "title": "Next-Gen Firewalling",
-                    "description": "Inspect all ingress and egress packets with state-of-the-art packet inspection."
-                  },
-                  {
-                    "icon": "Monitor",
-                    "title": "Intrusion Prevention",
-                    "description": "Active IPS barriers that block malicious port scanning and unauthorized intrusion vectors."
-                  },
-                  {
-                    "icon": "Settings",
-                    "title": "Encrypted VPN Tunnels",
-                    "description": "Zero-trust encrypted channels connecting remote branch offices and data centers."
-                  }
-                ],
-                "overview": {
-                  "titlePrefix": "Impenetrable Perimeter Defense for",
-                  "titleHighlight": "Corporate Networks",
-                  "paragraphs": [
-                    "Modern networks are borderless and constantly targeted by complex infiltration campaigns. Our network defense suite secures every switch, router, and perimeter gateway.",
-                    "We deploy military-grade deep packet inspection, automated intrusion prevention (IPS), and DDoS scrubbing so your mission-critical applications stay ultra-fast and ultra-secure."
-                  ],
-                  "image": {
-                    "src": "/images/service/data-center-server-room.webp",
-                    "alt": "Data Center Server Room"
-                  }
-                },
-                "keyBenefits": {
-                  "titlePrefix": "Key",
-                  "titleHighlight": "Benefits",
-                  "description": "Deliver reliable uptime while insulating your network from malicious actors.",
-                  "items": [
-                    {
-                      "icon": "Shield",
-                      "title": "Perimeter Hardening",
-                      "description": "Eliminate vulnerability vectors across edge gateways and cloud routers."
-                    },
-                    {
-                      "icon": "Database",
-                      "title": "DDoS Resiliency",
-                      "description": "Absorb and scrub volumetric DDoS floods without impacting user traffic."
-                    },
-                    {
-                      "icon": "Clock",
-                      "title": "Zero Bandwidth Bottlenecks",
-                      "description": "High-throughput hardware accelerators maintain wire-speed packet inspection."
-                    },
-                    {
-                      "icon": "Users",
-                      "title": "Granular Access Policies",
-                      "description": "Segment user privileges and enforce zero-trust network access (ZTNA)."
-                    }
-                  ]
-                }
+                "isHighlighted": false
               },
               {
                 "id": "data-encryption",
-                "title": "Data Encryption and Privacy",
-                "description": "Secure your sensitive data with industry-leading encryption and privacy solutions.",
+                "title": "End-to-End Cryptographic Vaulting",
+                "description": "FIPS 140-3 validated AES-256 GCM encryption at rest and in transit with automated hardware security module (HSM) key rotation.",
                 "icon": "Database",
-                "isHighlighted": false,
-                "bannerImage": {
-                  "src": "/images/service/data-encryption.webp",
-                  "alt": "Data Encryption and Cryptography"
-                },
-                "detailedFeatures": [
-                  "AES-256 Bit Encryption At-Rest and In-Transit",
-                  "Cryptographic Key Management Services (KMS)",
-                  "Data Loss Prevention (DLP) Policies",
-                  "GDPR, HIPAA & ISO 27001 Data Compliance"
-                ],
-                "benefits": "Guarantees business confidentiality and prevents accidental data leakage across teams.",
-                "pillars": [
-                  {
-                    "icon": "Lock",
-                    "title": "AES-256 Cryptography",
-                    "description": "Military-grade data transformation protecting structured and unstructured databases."
-                  },
-                  {
-                    "icon": "Database",
-                    "title": "Key Management (KMS)",
-                    "description": "Automated key rotation, HSM-backed hardware security modules, and access logs."
-                  },
-                  {
-                    "icon": "Shield",
-                    "title": "Data Loss Prevention (DLP)",
-                    "description": "Proactive content sniffing to prevent unauthorized exports or accidental leaks."
-                  }
-                ],
-                "overview": {
-                  "titlePrefix": "Ironclad Privacy Protection for",
-                  "titleHighlight": "Sensitive Data Assets",
-                  "paragraphs": [
-                    "Data is your most valuable asset—and the primary target of cybercriminals. We safeguard sensitive customer records, financial transactions, and proprietary source code.",
-                    "By combining cryptographic isolation at rest and in transit with continuous DLP monitoring, we guarantee regulatory compliance with GDPR, HIPAA, and ISO 27001 standards."
-                  ],
-                  "image": {
-                    "src": "/images/service/secure-data-center.webp",
-                    "alt": "Secure Data Center"
-                  }
-                },
-                "keyBenefits": {
-                  "titlePrefix": "Key",
-                  "titleHighlight": "Benefits",
-                  "description": "Protect confidentiality, adhere to privacy laws, and avoid costly regulatory penalties.",
-                  "items": [
-                    {
-                      "icon": "Shield",
-                      "title": "Bulletproof Confidentiality",
-                      "description": "Even if physical storage is compromised, stolen records remain entirely illegible."
-                    },
-                    {
-                      "icon": "Database",
-                      "title": "Regulatory Compliance",
-                      "description": "Meet strict requirements under HIPAA, GDPR, PCI-DSS, and SOC2 effortlessly."
-                    },
-                    {
-                      "icon": "Clock",
-                      "title": "Automated Key Lifecycle",
-                      "description": "Zero-touch cryptographic key cycling and revocation safeguards."
-                    },
-                    {
-                      "icon": "Users",
-                      "title": "Role-Based Decryption",
-                      "description": "Enforce least-privilege decryption rights with audit logging."
-                    }
-                  ]
-                }
+                "isHighlighted": false
               },
               {
                 "id": "cloud-security",
-                "title": "Cloud Security and Compliance",
-                "description": "Keep your cloud environments secure, compliant, and resilient against emerging threats.",
+                "title": "Multi-Cloud Posture Hardening (CSPM)",
+                "description": "Continuous compliance and drift prevention across AWS, Azure, and GCP with automated IAM least-privilege enforcement.",
                 "icon": "Cloud",
-                "isHighlighted": false,
-                "bannerImage": {
-                  "src": "/images/service/cloud-security.webp",
-                  "alt": "Cloud Infrastructure and Global Network"
-                },
-                "detailedFeatures": [
-                  "Multi-Cloud Security Posture Management (CSPM)",
-                  "AWS, Azure & Google Cloud Security Hardening",
-                  "Identity and Access Management (IAM) Audit",
-                  "Continuous Compliance Automated Auditing"
-                ],
-                "benefits": "Protects multi-cloud infrastructure while maintaining strict regulatory compliance.",
-                "pillars": [
-                  {
-                    "icon": "Cloud",
-                    "title": "CSPM Posture Management",
-                    "description": "Continuous scanning for cloud misconfigurations across AWS, Azure, and Google Cloud."
-                  },
-                  {
-                    "icon": "Shield",
-                    "title": "IAM Least Privilege",
-                    "description": "Audit IAM roles, credentials, and access tokens to eliminate privilege escalation."
-                  },
-                  {
-                    "icon": "Settings",
-                    "title": "Container & K8s Security",
-                    "description": "Image scanning, runtime drift prevention, and zero-trust mesh networking."
-                  }
-                ],
-                "overview": {
-                  "titlePrefix": "Cloud-Native Protection for",
-                  "titleHighlight": "Scalable Infrastructures",
-                  "paragraphs": [
-                    "As workloads transition to multi-cloud ecosystems, misconfigurations and credential sprawl represent the greatest operational risks.",
-                    "Our cloud security framework continuously scans Kubernetes clusters, serverless containers, and cloud buckets, providing full observability and automated remediation."
-                  ],
-                  "image": {
-                    "src": "/images/service/cloud-computing-servers.webp",
-                    "alt": "Cloud Computing Servers"
-                  }
-                },
-                "keyBenefits": {
-                  "titlePrefix": "Key",
-                  "titleHighlight": "Benefits",
-                  "description": "Accelerate cloud adoption with automated guardrails and total configuration visibility.",
-                  "items": [
-                    {
-                      "icon": "Shield",
-                      "title": "Misconfiguration Elimination",
-                      "description": "Automatically detect and remediate publicly exposed S3 buckets and open security groups."
-                    },
-                    {
-                      "icon": "Database",
-                      "title": "Multi-Cloud Coverage",
-                      "description": "Unified governance plane for AWS, Azure, Google Cloud, and private hybrid clouds."
-                    },
-                    {
-                      "icon": "Clock",
-                      "title": "Shift-Left CI/CD Checks",
-                      "description": "Scan Terraform and Helm manifests before production deployment."
-                    },
-                    {
-                      "icon": "Users",
-                      "title": "Continuous Audit Readiness",
-                      "description": "One-click compliance reporting for SOC2, CIS benchmarks, and ISO 27001."
-                    }
-                  ]
-                }
+                "isHighlighted": false
               },
               {
                 "id": "incident-response",
-                "title": "Incident Response and Management",
-                "description": "Rapid response and expert management to minimize risks and ensure business continuity.",
+                "title": "Rapid Threat Neutralization & Forensics",
+                "description": "15-minute guaranteed SLA escalation with court-admissible digital forensics, blast radius containment, and zero-loss system recovery.",
                 "icon": "Settings",
-                "isHighlighted": false,
-                "bannerImage": {
-                  "src": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200",
-                  "alt": "Incident Response Command Center"
-                },
-                "detailedFeatures": [
-                  "15-Minute SLA Incident Escalation Response",
-                  "Digital Forensic Analysis & Root Cause Audit",
-                  "Containment & System Recovery Orchestration",
-                  "Post-Incident Resilience Advisory"
-                ],
-                "benefits": "Dramatically reduces operational impact and reputational damage during active breaches.",
-                "pillars": [
-                  {
-                    "icon": "Clock",
-                    "title": "Rapid 15-Min SLA",
-                    "description": "Immediate mobilization of senior forensic responders upon anomaly alert triggers."
-                  },
-                  {
-                    "icon": "Shield",
-                    "title": "Containment Playbooks",
-                    "description": "Swift network isolation preventing malware lateral movement and data exfiltration."
-                  },
-                  {
-                    "icon": "Settings",
-                    "title": "System Recovery & Forensics",
-                    "description": "Evidence preservation, root-cause investigation, and clean backup restoration."
-                  }
-                ],
-                "overview": {
-                  "titlePrefix": "Rapid Mitigation and Recovery for",
-                  "titleHighlight": "Critical Security Events",
-                  "paragraphs": [
-                    "When a cybersecurity breach occurs, every second counts. Our battle-tested Incident Response team mobilizes immediately to contain intrusions, eradicate threats, and safely restore business operations.",
-                    "Following containment, we conduct exhaustive digital forensics to uncover entry vectors and fortify your defenses against recurring attack vectors."
-                  ],
-                  "image": {
-                    "src": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
-                    "alt": "Emergency Incident Response Team"
-                  }
-                },
-                "keyBenefits": {
-                  "titlePrefix": "Key",
-                  "titleHighlight": "Benefits",
-                  "description": "Minimize downtime, preserve evidence, and safeguard corporate reputation under pressure.",
-                  "items": [
-                    {
-                      "icon": "Clock",
-                      "title": "SLA-Guaranteed Response",
-                      "description": "Immediate triage and guidance from seasoned crisis commanders."
-                    },
-                    {
-                      "icon": "Shield",
-                      "title": "Damage Containment",
-                      "description": "Stop lateral movement and prevent ransomware encryption from spreading."
-                    },
-                    {
-                      "icon": "Database",
-                      "title": "Court-Admissible Forensics",
-                      "description": "Thorough chain-of-custody digital evidence collection and reporting."
-                    },
-                    {
-                      "icon": "Users",
-                      "title": "Post-Breach Hardening",
-                      "description": "Detailed executive and technical recommendations to prevent recurrence."
-                    }
-                  ]
-                }
+                "isHighlighted": false
               }
             ]
-          }
-        }
-      },
-      "whyChooseUs": {
-        "variants": {
-          "CyberVaultWhyChooseUs1": {
-            "tagBadge": {
-              "icon": "Sparkles",
-              "text": "Why Choose Us"
-            },
-            "title": {
-              "prefix": "Future-Ready Cybersecurity That Goes",
-              "highlight": "Beyond Defense"
-            },
-            "description": "We don't just stop attacks—we prepare your business to withstand them. By combining proactive defense, real-time intelligence, and long-term strategies.",
-            "highlightBanner": {
-              "percentage": 95,
-              "quote": "“Cybersecurity is not just about protecting systems, it's about protecting trust.”",
-              "bulletPoints": [
-                "Future-Ready Security",
-                "24/7 Expert Support",
-                "Advanced Data Protection"
-              ]
-            },
-            "featurePillars": [
-              {
-                "icon": "LuShieldHalf",
-                "title": "Proactive Threat Detection",
-                "desc": "We don't just wait for threats to strike — our advanced monitoring tools identify risks before they become attacks."
-              },
-              {
-                "icon": "IoSettingsOutline",
-                "title": "Tailored Security Solutions",
-                "desc": "We design customized cybersecurity strategies that align with your industry and business goals."
-              },
-              {
-                "icon": "HiUserGroup",
-                "title": "Expert Team Support",
-                "desc": "Our certified experts work as an extension of your team, ensuring continuous protection and guidance."
-              },
-              {
-                "icon": "GiNetworkBars",
-                "title": "Long-Term Partnership",
-                "desc": "We focus on building lasting relationships and helping your business stay secure for the future."
-              }
-            ],
-            "images": {
-              "mainTall": {
-                "src": "/images/why-choose-us-1.webp",
-                "alt": "Cybersecurity Operations Lead"
-              },
-              "stackedTop": {
-                "src": "/images/why-choose-us-2.webp",
-                "alt": "Security Analyst Monitoring"
-              },
-              "stackedBottom": {
-                "src": "/images/why-choose-us-3.webp",
-                "alt": "Cyber Risk Assessment"
-              }
-            },
-            "experienceBadge": {
-              "icon": "Award",
-              "years": "25+",
-              "label": "Years of Experience"
-            }
           }
         }
       },
       "testimonial": {
         "variants": {
           "CyberVaultTestimonial1": {
-            "tagline": "TESTIMONIALS",
+            "tagline": "Our Testimonials",
             "title": {
-              "prefix": "What Our Clients are",
-              "highlight": "Saying"
+              "prefix": "Trusted by Global ",
+              "highlight": "Security Leaders"
             },
-            "description": "Trusted by businesses across industries for reliable and effective cybersecurity solutions.",
+            "description": "Discover how premier organizations rely on our zero-trust defenses to thwart sophisticated cyber attacks and ransomware syndicates.",
             "testimonials": [
               {
                 "id": 1,
                 "rating": 5,
-                "quote": "Their cybersecurity solutions have significantly strengthened our security posture. The team is highly professional, responsive, and truly understands our business needs.",
+                "quote": "CyberVault's autonomous threat interception isolated a weaponized zero-day exploit in less than two seconds. Their red-team architecture is unmatched in the industry.",
                 "author": "Kevin Andrew",
-                "role": "IT Manager, TechSphere",
+                "role": "VP of Information Security, Apex FinTech",
                 "avatar": "/images/testimonial/testimonial-1.webp"
               },
               {
                 "id": 2,
                 "rating": 5,
-                "quote": "Excellent service and deep expertise! Their proactive approach to threat detection and quick response time has given us complete peace of mind. Highly recommended for any business.",
+                "quote": "Deploying their zero-trust micro-segmentation reduced our vulnerability exposure surface by 94%. Outstanding response time and surgical engineering precision.",
                 "author": "Alina Parker",
-                "role": "CEO, Global Tech",
+                "role": "Chief Information Officer, Sovereign Cloud",
                 "avatar": "/images/testimonial/testimonial-2.webp"
               },
               {
                 "id": 3,
                 "rating": 5,
-                "quote": "CyberVault helped us comply with regulatory standards seamlessly strengthened our security posture while fortifying our cloud perimeter against sophisticated ransomware attempts.",
+                "quote": "Their automated EDR rollback saved our critical database clusters during a coordinated ransomware blitz. An indispensable cybersecurity partner.",
                 "author": "Michael Chang",
-                "role": "CTO, FinSecure Inc",
+                "role": "Head of Cyber Architecture, FinSecure Global",
                 "avatar": "/images/testimonial/testimonial-3.webp"
               },
               {
                 "id": 4,
                 "rating": 5,
-                "quote": "The 24/7 SOC monitoring team detected and neutralized an active threat strengthened our security posture within minutes. Their dedication to client protection is truly outstanding.",
+                "quote": "The 24/7 SOC telemetry and instantaneous containment give our executive board total peace of mind. Highest recommendation for enterprise-grade defense.",
                 "author": "Sarah Jenkins",
-                "role": "Head of Infrastructure, EnterpriseX",
+                "role": "Director of Infrastructure, EnterpriseX",
                 "avatar": "/images/testimonial/testimonial-4.webp"
               }
             ]
-          }
-        }
-      },
-      "blog": {
-        "variants": {
-          "CyberVaultBlog1": {
-            "tagline": "LATEST BLOG",
-            "title": {
-              "prefix": "Our Latest",
-              "highlight": "Insights & Blogs"
-            },
-            "description": "Stay updated with expert insights, industry trends, and practical tips on cybersecurity, data protection, and risk management.",
-            "categories": [
-              {
-                "name": "Cyber Security",
-                "count": 12
-              },
-              {
-                "name": "Data Protection",
-                "count": 8
-              },
-              {
-                "name": "Cloud Security",
-                "count": 10
-              },
-              {
-                "name": "Network Security",
-                "count": 7
-              },
-              {
-                "name": "Compliance",
-                "count": 5
-              },
-              {
-                "name": "Incident Response",
-                "count": 9
-              }
-            ],
-            "blogPosts": [
-              {
-                "id": 1,
-                "slug": "linux-threat-detection",
-                "date": "June 24, 2025",
-                "title": "The Linux Threat You Need to Know",
-                "category": "Cyber Security",
-                "image": "/images/blog/linux-threat-detection.webp",
-                "excerpt": "An in-depth analysis of newly discovered Linux malware vectors targeting cloud servers and enterprise Linux distributions. Learn how to audit your systems and mitigate risk effectively.",
-                "author": "Security Research Team",
-                "authorRole": "Threat Intelligence Analyst",
-                "readTime": "5 min read",
-                "content": {
-                  "intro": "In today's digital world, enterprise Linux servers form the backbone of critical cloud workloads, making them prime targets for sophisticated intrusion attempts. From kernel-level exploits to memory-resident rootkits, threat actors are rapidly adapting their toolsets to target modern enterprise distributions.",
-                  "sections": [
-                    {
-                      "title": "1. Understand the Evolving Threat Landscape",
-                      "paragraph": "Cyber threats against Linux hosts have grown increasingly sophisticated. Attackers use zero-day privilege escalations, stealthy persistence modules, and encrypted command-and-control channels to bypass standard logging mechanisms."
-                    },
-                    {
-                      "title": "2. Implement a Multi-Layered Security Strategy",
-                      "paragraph": "A multi-layered defense combines kernel hardening, runtime process behavioral analysis, and automated identity auditing to eliminate blind spots.",
-                      "checklist": [
-                        "Deploy eBPF-based runtime threat detection tools",
-                        "Regularly audit package registries and system binaries",
-                        "Enforce least-privilege SSH keys and multi-factor authentication",
-                        "Implement strict firewall micro-segmentation"
-                      ],
-                      "secondaryImage": "/images/blog/blog-1.webp"
-                    },
-                    {
-                      "title": "3. Monitor, Detect, and Respond",
-                      "paragraph": "Continuous observability into daemon behavior and outbound network sockets allows security teams to catch anomalous lateral movement before sensitive corporate records are compromised."
-                    },
-                    {
-                      "title": "4. Ensure Compliance and Data Integrity",
-                      "paragraph": "Rigorous adherence to CIS Linux benchmarks, NIST SP 800-53, and ISO 27001 ensures your server fleet remains hardened and audit-ready across all operational zones."
-                    }
-                  ],
-                  "quote": "Linux security is not about assuming invulnerability — it's about building verifiable defenses and continuous visibility.",
-                  "conclusion": "By implementing active behavioral monitoring, hardening kernel parameters, and auditing system telemetry, enterprises can eliminate exposure and safeguard mission-critical Linux environments."
-                }
-              },
-              {
-                "id": 2,
-                "slug": "closing-security-gaps",
-                "date": "June 18, 2025",
-                "title": "Closing Security Gaps with Innovation",
-                "category": "Cloud Security",
-                "image": "/images/blog/closing-security-gaps.webp",
-                "excerpt": "How modern AI-driven threat detection platforms help security operation centers identify zero-day vulnerabilities and bridge critical infrastructure compliance gaps.",
-                "author": "Alex Morgan",
-                "authorRole": "Principal Cloud Architect",
-                "readTime": "4 min read",
-                "content": {
-                  "intro": "As cloud architectures scale across distributed microservices and multiple cloud providers, security gaps inevitably emerge at the boundaries of infrastructure layers. Innovation in automated telemetry and AI-guided triage is bridging these critical divides.",
-                  "sections": [
-                    {
-                      "title": "1. Identify Blind Spots Across Cloud Boundaries",
-                      "paragraph": "Legacy scanning tools frequently miss fleeting container lifecycles and ephemeral cloud instances. Bridging this gap requires continuous agentless posture scanning coupled with automated risk scoring."
-                    },
-                    {
-                      "title": "2. Deploy Intelligent Automated Remediation",
-                      "paragraph": "Rather than inundating SOC analysts with hundreds of low-severity alerts, modern machine intelligence correlates signals into actionable breach timelines.",
-                      "checklist": [
-                        "Automate security group and bucket drift remediation",
-                        "Correlate multi-cloud identity tokens and permissions",
-                        "Integrate vulnerability scans into CI/CD build gates",
-                        "Perform automated attack surface discovery weekly"
-                      ],
-                      "secondaryImage": "/images/blog/blog-2.webp"
-                    },
-                    {
-                      "title": "3. Foster Cross-Functional Security Ownership",
-                      "paragraph": "Embedding security policies into declarative infrastructure code empowers engineering squads to fix configuration defects before code ever reaches production."
-                    },
-                    {
-                      "title": "4. Benchmark Against Leading Frameworks",
-                      "paragraph": "Benchmarking your posture continuously against SOC2 and CIS standards ensures your organization stays ahead of evolving auditor requirements."
-                    }
-                  ],
-                  "quote": "Security innovation is not just about adopting new tools — it is about accelerating response times and eliminating systemic friction.",
-                  "conclusion": "Organizations that blend intelligent posture automation with collaborative DevSecOps culture establish an agile, resilient defense against modern digital adversaries."
-                }
-              },
-              {
-                "id": 3,
-                "slug": "bianlian-data-extortion",
-                "date": "June 10, 2025",
-                "title": "BianLian Focuses on Data Extortion",
-                "category": "Data Protection",
-                "image": "/images/blog/bianlian-data-extortion.webp",
-                "excerpt": "The BianLian group shifts away from traditional ransomware encryption toward pure data extortion threats. Here is what security teams must do to safeguard sensitive assets.",
-                "author": "Threat Intelligence Desk",
-                "authorRole": "Senior Cyber Threat Analyst",
-                "readTime": "6 min read",
-                "content": {
-                  "intro": "The cybercrime ecosystem has witnessed a fundamental shift as threat syndicates like BianLian transition away from noisy file encryption toward stealthy, high-leverage data theft and extortion schemes.",
-                  "sections": [
-                    {
-                      "title": "1. The Anatomy of Modern Extortion Campaigns",
-                      "paragraph": "Without deploying disruptive ransomware binaries that trigger immediate alarms, attackers dwell inside corporate networks for weeks, meticulously staging and exfiltrating proprietary customer records and financial ledgers."
-                    },
-                    {
-                      "title": "2. Implement Proactive Data Loss Safeguards",
-                      "paragraph": "Mitigating data extortion requires locking down egress pathways and implementing strict content inspection policies across all internal endpoints.",
-                      "checklist": [
-                        "Enforce AES-256 cryptographic isolation at-rest and in-transit",
-                        "Deploy automated outbound Data Loss Prevention (DLP) filters",
-                        "Establish canary tokens and honeypot files in key file shares",
-                        "Restrict and monitor unapproved cloud storage services"
-                      ],
-                      "secondaryImage": "/images/blog/blog-3.webp"
-                    },
-                    {
-                      "title": "3. Rapid Containment and Forensic Triage",
-                      "paragraph": "When suspicious exfiltration spikes occur, automated isolation playbooks must sever external sessions and lock affected credentials instantly to limit data exposure."
-                    },
-                    {
-                      "title": "4. Strengthen Crisis Communications Plans",
-                      "paragraph": "Having clear incident playbooks and predefined communication channels ensures executive leadership can make informed decisions without succumbing to extortion demands."
-                    }
-                  ],
-                  "quote": "When cybercriminals target confidentiality over availability, strong encryption and egress controls are your ultimate safety net.",
-                  "conclusion": "By focusing on pervasive encryption, active DLP surveillance, and credential rotation, organizations can render stolen data useless and dismantle extortion leverage."
-                }
-              },
-              {
-                "id": 4,
-                "slug": "zero-trust-architecture",
-                "date": "May 28, 2025",
-                "title": "Zero-Trust Architecture for Remote Work",
-                "category": "Network Security",
-                "image": "/images/blog/zero-trust-architecture.webp",
-                "excerpt": "Implementing strict identity verification and micro-segmentation strategies across hybrid cloud and remote workforce deployments.",
-                "author": "David Chen",
-                "authorRole": "Network Defense Lead",
-                "readTime": "7 min read",
-                "content": {
-                  "intro": "The erosion of the traditional network perimeter has made castle-and-moat security obsolete. Zero-Trust Architecture replaces implicit network trust with continuous, context-aware verification for every request.",
-                  "sections": [
-                    {
-                      "title": "1. The Core Principles of Zero-Trust",
-                      "paragraph": "Zero-Trust mandates 'never trust, always verify'. Every session, regardless of whether it originates inside the office or from a remote coffee shop, is verified with device posture and contextual identity checks."
-                    },
-                    {
-                      "title": "2. Enforce Micro-Segmentation and Least Privilege",
-                      "paragraph": "Micro-segmenting corporate infrastructure ensures that a compromise of one developer laptop does not grant access to backend databases or payment gateways.",
-                      "checklist": [
-                        "Replace legacy corporate VPNs with Zero-Trust Network Access (ZTNA)",
-                        "Require hardware-backed FIDO2 multi-factor authentication",
-                        "Continuously assess endpoint health before granting access",
-                        "Log and audit all inter-service API communications"
-                      ],
-                      "secondaryImage": "/images/blog/blog-4.webp"
-                    },
-                    {
-                      "title": "3. Dynamic Context-Based Access Policies",
-                      "paragraph": "Evaluating factors like geographic location, device compliance status, and anomaly scoring allows access rules to adapt dynamically to evolving risk levels."
-                    },
-                    {
-                      "title": "4. Seamless User Experience",
-                      "paragraph": "Modern Zero-Trust tools run invisibly in the background, providing frictionless single-sign-on while maintaining uncompromising security governance."
-                    }
-                  ],
-                  "quote": "Zero-Trust is not a single product you purchase — it is an architectural mindset that treats identity as the new perimeter.",
-                  "conclusion": "Adopting Zero-Trust safeguards decentralized workforces, limits blast radius during incidents, and ensures complete visibility across hybrid environments."
-                }
-              },
-              {
-                "id": 5,
-                "slug": "ai-threat-detection",
-                "date": "May 15, 2025",
-                "title": "AI-Powered Threat Detection Systems",
-                "category": "Cyber Security",
-                "image": "/images/blog/ai-threat-detection.webp",
-                "excerpt": "Exploring the next frontier of defensive cyber capabilities where automated machine intelligence intercepts attacks in milliseconds.",
-                "author": "Dr. Sarah Lin",
-                "authorRole": "AI & Cryptography Specialist",
-                "readTime": "5 min read",
-                "content": {
-                  "intro": "As cyber attackers weaponize artificial intelligence to generate polymorphic malware and automated phishing lures, defensive teams must deploy AI models capable of out-computing and out-predicting adversaries.",
-                  "sections": [
-                    {
-                      "title": "1. Heuristic Anomaly Detection at Scale",
-                      "paragraph": "Traditional signature detection fails against new exploit code. AI models analyze behavioral baselines across user credentials and server workloads to catch subtle deviations indicative of an active breach."
-                    },
-                    {
-                      "title": "2. Sub-Second Incident Mitigation",
-                      "paragraph": "When an anomaly matches an attack pattern, automated response algorithms quarantine network adapters, terminate malicious processes, and rotate compromised keys before humans can even review the ticket.",
-                      "checklist": [
-                        "Train neural networks on enterprise network telemetry",
-                        "Automate cross-platform threat correlation across logs",
-                        "Deploy generative models to simulate red-team attacks",
-                        "Integrate explainable AI so analysts understand trigger logic"
-                      ],
-                      "secondaryImage": "/images/blog/blog-5.webp"
-                    },
-                    {
-                      "title": "3. Reducing Alert Fatigue for Human Analysts",
-                      "paragraph": "By filtering out 98% of benign noise and false positives, AI allows senior cybersecurity analysts to direct their expertise toward complex investigations."
-                    },
-                    {
-                      "title": "4. Defending Against Adversarial AI",
-                      "paragraph": "Continuous retraining and adversarial testing prevent threat actors from poisoning detection algorithms or finding algorithmic blind spots."
-                    }
-                  ],
-                  "quote": "Defenders can no longer afford human-speed response in an era of machine-speed warfare.",
-                  "conclusion": "AI-driven threat detection empowers security operations centers to stay ahead of the curve, neutralizing emerging threats before operational disruption occurs."
-                }
-              },
-              {
-                "id": 6,
-                "slug": "securing-cloud-native",
-                "date": "May 02, 2025",
-                "title": "Securing Cloud-Native Infrastructure",
-                "category": "Cloud Security",
-                "image": "/images/blog/securing-cloud-native.webp",
-                "excerpt": "Best practices for hardening Kubernetes clusters, container registries, and serverless pipelines in enterprise deployments.",
-                "author": "DevOps Security Team",
-                "authorRole": "DevSecOps Infrastructure Team",
-                "readTime": "8 min read",
-                "content": {
-                  "intro": "Cloud-native architectures deliver unmatched developer velocity, but container runtimes, Kubernetes API servers, and infrastructure-as-code manifests introduce new, highly complex attack vectors.",
-                  "sections": [
-                    {
-                      "title": "1. Shift-Left Security in Continuous Integration",
-                      "paragraph": "Catching vulnerabilities in Terraform manifests, Helm charts, and container base images before deployment saves engineering teams hundreds of hours in emergency patching."
-                    },
-                    {
-                      "title": "2. Runtime Defense for Kubernetes Clusters",
-                      "paragraph": "Enforcing immutable root filesystems, restricting privileged containers, and deploying runtime drift detection protects running pods from container breakout attempts.",
-                      "checklist": [
-                        "Enforce strict Kubernetes Admission Controller policies",
-                        "Scan container registries for known CVEs daily",
-                        "Implement mutual TLS between microservice pods",
-                        "Audit cloud provider IAM roles and service account bindings"
-                      ],
-                      "secondaryImage": "/images/blog/blog-6.webp"
-                    },
-                    {
-                      "title": "3. Immutable Cloud Infrastructure",
-                      "paragraph": "Treating production servers as immutable components prevents attackers from modifying configuration files or persisting across container restarts."
-                    },
-                    {
-                      "title": "4. Comprehensive Audit Trails and Observability",
-                      "paragraph": "Centralizing Kubernetes API audit logs and pod telemetry into immutable storage provides full chain-of-custody for incident investigations."
-                    }
-                  ],
-                  "quote": "Building secure cloud-native systems is not about slowing developers down — it is about providing safe guardrails for innovation.",
-                  "conclusion": "With shift-left validation, admission controls, and runtime isolation, organizations can unlock cloud speed without compromising infrastructure integrity."
-                }
-              }
-            ]
-          }
-        }
-      },
-      "portfolio": {
-        "variants": {
-          "CyberVaultPortfolio1": {
-            "tagline": "PORTFOLIO",
-            "title": {
-              "prefix": "Our Successful",
-              "highlight": "Projects"
-            },
-            "description": "Explore our portfolio of successful projects and see how we’ve helped businesses of all sizes protect their data and achieve their goals.",
-            "projects": [
-              {
-                "id": "cloud-security",
-                "title": "Cloud Security Implementation",
-                "description": "Secured multi-cloud infrastructure across AWS and Azure with automated threat detection and telemetry.",
-                "image": "/images/portfolio/cloud-security_1.webp"
-              },
-              {
-                "id": "endpoint-protection",
-                "title": "Endpoint Protection Deployment",
-                "description": "Deployed next-generation EDR and behavioral heuristic agents across 5,000+ corporate workstations and mobile endpoints.",
-                "image": "/images/portfolio/endpoint-protection.webp"
-              },
-              {
-                "id": "network-defense",
-                "title": "Enterprise Network Defense",
-                "description": "Upgraded next-generation firewalls, encrypted SD-WAN mesh, and deep packet inspection for 28 international branch offices.",
-                "image": "/images/portfolio/network-defense_1.webp"
-              },
-              {
-                "id": "managed-security-services",
-                "title": "Managed Security Services",
-                "description": "Continuous 24/7/365 active SOC monitoring, AI-augmented SIEM correlation, and proactive threat hunting across all hybrid environments.",
-                "image": "/images/portfolio/managed-security-services.webp"
-              },
-              {
-                "id": "regulatory-compliance",
-                "title": "Regulatory Compliance Solution",
-                "description": "Designed automated compliance frameworks and continuous auditing readiness for ISO 27001, SOC 2 Type II, GDPR, and HIPAA.",
-                "image": "/images/portfolio/regulatory-compliance.webp"
-              },
-              {
-                "id": "incident-response",
-                "title": "Incident Response Program",
-                "description": "Established rapid containment protocols, forensic evidence capture, and coordinated eradication playbooks ensuring zero data leakage.",
-                "image": "/images/portfolio/incident-response.webp"
-              },
-              {
-                "id": "network-security-infrastructure",
-                "title": "Network Security Infrastructure",
-                "description": "Architected hardened Zero-Trust network segmentation, software-defined perimeters, and multi-gigabit DDoS mitigation barriers.",
-                "image": "/images/portfolio/network-security-infrastructure.webp"
-              },
-              {
-                "id": "disaster-recovery",
-                "title": "Disaster Recovery Solution",
-                "description": "Implemented geo-redundant automated failover, immutable offsite ransomware-proof backups, and high-availability hot-standby architectures.",
-                "image": "/images/portfolio/disaster-recovery.webp"
-              },
-              {
-                "id": "security-assistance-audit",
-                "title": "Security Assistance & Audit",
-                "description": "Executed rigorous penetration testing, source code security audits, identity privilege evaluations, and executive remediation roadmaps.",
-                "image": "/images/portfolio/security-assistance-audit.webp"
-              }
-            ]
-          }
-        }
-      },
-      "contact": {
-        "variants": {
-          "CyberVaultContact1": {
-            "infoCards": [
-              {
-                "icon": "BiSolidPhoneCall",
-                "title": "Call Us",
-                "line1": "+1 000000000",
-                "line2": "+1 (800) 555-0199",
-                "href": "tel:+1000000000"
-              },
-              {
-                "icon": "FaMapMarkerAlt",
-                "title": "Our Address",
-                "line1": "3170 Rosewood Lane Unit 200",
-                "line2": "Beverly Hills, CA 90210",
-                "href": "#map"
-              },
-              {
-                "icon": "IoMdMail",
-                "title": "Email Us",
-                "line1": "info@xyz.com",
-                "line2": "support@xyz.com",
-                "href": "mailto:info@xyz.com"
-              },
-              {
-                "icon": "Clock",
-                "title": "Office Hours",
-                "line1": "Mon - Fri: 10AM - 5:00PM",
-                "line2": "Sat: 11AM - 2:00PM",
-                "href": "#"
-              }
-            ],
-            "header": {
-              "tagline": "GET IN TOUCH",
-              "title": {
-                "prefix": "Contact us",
-                "highlight": "today!"
-              },
-              "description": "Have questions or need expert cybersecurity support? Our team is ready to guide you with tailored solutions and rapid response.",
-              "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26430.393553120905!2d-118.411656!3d34.073620!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0xd6c7c379fd081ed1!2sBeverly%20Hills%2C%20CA%2090210%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-            },
-            "form": {
-              "tagline": "SEND US A MESSAGE",
-              "title": {
-                "prefix": "Fill up the",
-                "highlight": "form"
-              },
-              "description": "Simply fill out the form below with your details and requirements, and our team will get back to you promptly.",
-              "submitButton": {
-                "label": "Send Message",
-                "icon": "ArrowUpRight"
-              },
-              "successMessage": "Thank you! Your message has been sent successfully. We will get back to you shortly."
-            }
-          }
-        }
-      },
-      "getAQuote": {
-        "variants": {
-          "CyberVaultGetAQuote1": {
-            "form": {
-              "tagline": "REQUEST A QUOTE",
-              "title": {
-                "prefix": "Get a Free",
-                "highlight": "Security Quote"
-              },
-              "description": "Share your requirements and our team will get back to you with a tailored solution and transparent pricing.",
-              "servicesOptions": [
-                "Threat Detection & Prevention",
-                "Endpoint Security & EDR",
-                "Network Defense & Firewalls",
-                "Data Encryption & Compliance",
-                "Cloud Security Hardening",
-                "Incident Response & Forensics"
-              ],
-              "employeeOptions": [
-                "1 - 10 Employees",
-                "11 - 50 Employees",
-                "51 - 200 Employees",
-                "201 - 500 Employees",
-                "500+ Enterprise"
-              ],
-              "submitButton": {
-                "label": "Submit Request",
-                "icon": "ArrowRight"
-              },
-              "successTitle": "Quote Request Received!",
-              "successMessage": "Our cybersecurity specialists will analyze your requirements and send a customized proposal shortly."
-            },
-            "benefits": {
-              "tagline": "WHY GET A QUOTE",
-              "title": {
-                "prefix": "Customized Solutions for",
-                "highlight": "Your Business"
-              },
-              "description": "Every business has unique security needs. We provide tailored solutions and transparent pricing to help you choose the right protection for your organization.",
-              "items": [
-                {
-                  "icon": "ShieldCheck",
-                  "title": "Tailored Solutions",
-                  "desc": "Pricing based on your specific requirements."
-                },
-                {
-                  "icon": "Headphones",
-                  "title": "Expert Consultation",
-                  "desc": "Get guidance from our security specialists."
-                },
-                {
-                  "icon": "FileText",
-                  "title": "Transparent Pricing",
-                  "desc": "No hidden costs. Clear and detailed quotes."
-                },
-                {
-                  "icon": "Clock",
-                  "title": "Quick Response",
-                  "desc": "Our team will get back to you within 24 hours."
-                }
-              ],
-              "image": {
-                "src": "/images/get-a-quote.jpg",
-                "alt": "Cybersecurity Network Operations"
-              }
-            }
           }
         }
       },
@@ -1486,13 +430,13 @@
           "CyberVaultFooter1": {
             "brand": {
               "logo": {
-                "src": "/logo/logo-white-2.webp",
+                "src": "/logo/logo-whites-2.webp",
                 "alt": "CyberVault Logo",
                 "width": 230,
                 "height": 230,
                 "href": "/"
               },
-              "description": "Protecting your business with advanced cybersecurity solutions, proactive threat detection, and reliable digital defense.",
+              "description": "Engineering autonomous zero-trust cyber defense, neural threat interception, and resilient security infrastructure for mission-critical enterprises.",
               "socialLinks": [
                 {
                   "name": "Facebook",
@@ -1530,23 +474,23 @@
                 },
                 {
                   "label": "About Us",
-                  "href": "/about"
+                  "href": "#about"
                 },
                 {
                   "label": "Our Services",
-                  "href": "/services"
+                  "href": "#services"
                 },
                 {
-                  "label": "Portfolio",
-                  "href": "/portfolio"
+                  "label": "Process",
+                  "href": "#process"
                 },
                 {
-                  "label": "Blog",
-                  "href": "/blog"
+                  "label": "Testimonials",
+                  "href": "#testimonials"
                 },
                 {
-                  "label": "Contact Us",
-                  "href": "/contact"
+                  "label": "FAQs",
+                  "href": "#faqs"
                 }
               ]
             },
@@ -1555,56 +499,27 @@
               "links": [
                 {
                   "label": "Threat Detection",
-                  "href": "/services/threat-detection"
+                  "href": "#services"
                 },
                 {
                   "label": "Endpoint Security",
-                  "href": "/services/endpoint-security"
+                  "href": "#services"
                 },
                 {
                   "label": "Network Security",
-                  "href": "/services/network-defense"
+                  "href": "#services"
                 },
                 {
                   "label": "Data Protection",
-                  "href": "/services/data-encryption"
+                  "href": "#services"
                 },
                 {
                   "label": "Cloud Security",
-                  "href": "/services/cloud-security"
+                  "href": "#services"
                 },
                 {
                   "label": "Incident Response",
-                  "href": "/services/incident-response"
-                }
-              ]
-            },
-            "resourceLinks": {
-              "title": "Resources",
-              "links": [
-                {
-                  "label": "Blog",
-                  "href": "/blog"
-                },
-                {
-                  "label": "Case Studies",
-                  "href": "/portfolio"
-                },
-                {
-                  "label": "About Company",
-                  "href": "/about"
-                },
-                {
-                  "label": "Privacy Policy",
-                  "href": "/contact"
-                },
-                {
-                  "label": "Terms & Conditions",
-                  "href": "/contact"
-                },
-                {
-                  "label": "Support & Help",
-                  "href": "/contact"
+                  "href": "#services"
                 }
               ]
             },
@@ -1621,37 +536,71 @@
               },
               "email": {
                 "text": "info@xyz.com",
-                "href": "mailto:info@xyz.com",
+                "href": "mailto:[EMAIL_ADDRESS]",
                 "icon": "IoMdMail"
-              },
-              "actionButton": {
-                "label": "Get a Quote",
-                "href": "/get-a-quote",
-                "icon": "ArrowRight"
               }
             },
             "bottomBar": {
-              "copyright": "© 2026 CyberVault . All Rights Reserved. Powered by Lestow",
-              "links": []
+              "copyright": "© 2026 CyberVault. All Rights Reserved. Powered By Lestow."
             }
           }
         }
       },
-      "pageTopSection": {
+      "faq": {
         "variants": {
-          "CyberVaultPageTop1": {
-            "title": "Cyber Security Operations",
-            "breadcrumbs": [
+          "CyberVaultFaq1": {
+            "tagline": "FREQUENTLY ASKED QUESTIONS",
+            "title": {
+              "prefix": "Frequently Asked",
+              "highlight": "Questions"
+            },
+            "description": "Comprehensive insights into our autonomous AI intrusion countermeasures, zero-trust cloud mesh, and enterprise compliance certifications.",
+            "faqs": [
               {
-                "label": "Home",
-                "href": "/"
+                "id": "faq-1",
+                "question": "How quickly does CyberVault's autonomous AI detect and neutralize attacks?",
+                "answer": "Our neural telemetry engine and 24/7 SOC contain threats in under 1.2 seconds through automated process isolation, memory scrubbing, and microsecond network micro-segmentation before any payload can detonate.",
+                "category": "Autonomous Defense"
               },
               {
-                "label": "Cyber Security",
-                "href": "/"
+                "id": "faq-2",
+                "question": "How is zero-trust enforced across hybrid and multi-cloud clouds (AWS, Azure, GCP)?",
+                "answer": "We enforce identity-first cryptographic verification on every workload request. With automated CSPM drift detection and automated IAM privilege trimming, no entity—internal or external—is implicitly trusted.",
+                "category": "Zero-Trust Architecture"
+              },
+              {
+                "id": "faq-3",
+                "question": "Does installing your telemetry agents cause network latency or performance overhead?",
+                "answer": "No. Our kernel-level eBPF sensors require less than 0.8% CPU overhead and zero reboot cycles. Deployment takes under 15 minutes per host cluster with zero downtime.",
+                "category": "Deployment & Speed"
+              },
+              {
+                "id": "faq-4",
+                "question": "Can CyberVault reverse or remediate active ransomware infections?",
+                "answer": "Yes. Our EDR/XDR suite features immutable shadow journaling and kernel-level filesystem checkpoints, enabling one-click instant rollback of encrypted files with zero data loss and immediate malware quarantine.",
+                "category": "Ransomware Remediation"
+              },
+              {
+                "id": "faq-5",
+                "question": "What regulatory compliance standards are automated and audited?",
+                "answer": "Our platform continuously generates real-time compliance matrices for SOC 2 Type II, ISO/IEC 27001:2022, HIPAA, PCI-DSS v4.0, NIST SP 800-53, and GDPR, providing auditors with exportable cryptographically stamped reports.",
+                "category": "Compliance & Auditing"
+              },
+              {
+                "id": "faq-6",
+                "question": "What is your emergency incident escalation SLA for enterprise clients?",
+                "answer": "We guarantee an immediate Tier-3 Red-Team mobilization within 15 minutes of any critical severity anomaly alert, complete with dedicated war-room coordination and forensic root-cause analysis.",
+                "category": "Incident Response SLA"
               }
-            ],
-            "backgroundImage": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200"
+            ]
+          }
+        }
+      },
+      "contactModal": {
+        "variants": {
+          "CyberVaultContactModal1": {
+            "title": "GET IN TOUCH INQUIRY",
+            "description": "Please fill in the form below to get in touch with us."
           }
         }
       }

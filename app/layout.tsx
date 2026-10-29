@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import TopBar from "@/components/layout/Topbar";
 import SmoothScroll from "@/components/common/SmoothScroll";
+import { ContactModalProvider } from "@/components/modal/GetInTouchModal";
 
 const ramabhadra = Ramabhadra({
   weight: "400",
@@ -27,15 +28,15 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${ramabhadra.variable} ${ramabhadra.className} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">
-        <SmoothScroll>
-          <TopBar email="info@xyz.com" contactUrl="/contact" />
-          <header className="sticky top-0 z-50 w-full shadow-sm">
+      <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
+        <ContactModalProvider>
+          <SmoothScroll>
+            <TopBar />
             <Navbar />
-          </header>
-          {children}
-          <Footer />
-        </SmoothScroll>
+            {children}
+            <Footer />
+          </SmoothScroll>
+        </ContactModalProvider>
       </body>
     </html>
   );

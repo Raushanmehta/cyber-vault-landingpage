@@ -21,7 +21,7 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
     });
     lenisRef.current = lenis;
 
-    // Expose lenis instance globally for reliable programmatic scrolls
+    // Global lenis instance
     if (typeof window !== "undefined") {
       (window as unknown as { __lenis: Lenis }).__lenis = lenis;
     }
@@ -44,7 +44,7 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
     };
   }, []);
 
-  // Guarantee scroll resets to top on every route change
+  // Reset scroll position
   useEffect(() => {
     if (lenisRef.current) {
       lenisRef.current.scrollTo(0, { immediate: true });

@@ -10,6 +10,7 @@ import { BsInstagram, BsTwitter } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
 import { LiaLinkedin } from 'react-icons/lia';
 import { siteMap } from '@/data';
+import { useContactModal } from '@/components/modal/GetInTouchModal';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
     ShieldCheck,
@@ -32,55 +33,53 @@ export default function TopBar({
     onContactClick
 }: TopBarProps) {
     const data = siteMap.topbar;
+    const { openModal } = useContactModal();
     const currentEmail = email || data.contact.email;
-    const currentContactUrl = contactUrl || data.notification.link.href;
+    const currentContactUrl = contactUrl || '/contact';
 
     const NotificationIcon = iconMap[data.notification.icon] || ShieldCheck;
     const EmailIcon = iconMap[data.contact.emailIcon] || Mail;
 
+    const handleLinkClick = (e: React.MouseEvent) => {
+        e.preventDefault();
+        openModal();
+        if (onContactClick) onContactClick();
+    };
+
     return (
-        <div className="hidden md:block w-full bg-gradient-to-r from-blue-950 via-blue-900 to-indigo-950 text-white text-xs sm:text-sm py-2.5 px-4 sm:px-8 border-b border-blue-800/40 shadow-sm relative z-50 font-sans">
+        <div className="hidden md:block w-full bg-gradient-to-r from-[#0d0103] via-[#1a0407] to-[#0d0103] text-white text-xs sm:text-sm py-2.5 px-4 sm:px-8 border-b border-red-900/40 shadow-sm relative z-50 font-sans">
             <div className="max-w-[1350px] mx-auto flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0">
 
-                {/* Left: Notification Banner */}
+                {/* Notification banner */}
                 <div className="flex items-center space-x-2 text-center md:text-left flex-wrap justify-center md:justify-start">
                     <motion.div
                         whileHover={{ scale: 1.1, rotate: 5 }}
-                        className="text-cyan-400 flex items-center"
+                        className="text-rose-500 flex items-center"
                     >
                         <NotificationIcon className="w-4 h-4 sm:w-5 sm:h-5" />
                     </motion.div>
                     <span className="text-gray-200 font-normal tracking-wide">
                         {data.notification.text}
                     </span>
-                    <motion.a
-                        href={currentContactUrl}
-                        onClick={onContactClick}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="text-white font-medium underline underline-offset-4 decoration-cyan-400 hover:text-cyan-300 transition-colors ml-1"
-                    >
-                        {data.notification.link.label}
-                    </motion.a>
                 </div>
 
-                {/* Right: Contact Email & Social Media Links */}
+                {/* Contact info */}
                 <div className="flex items-center space-x-4 sm:space-x-6 text-gray-300">
 
-                    {/* Email Info */}
+                    {/* Email link */}
                     <motion.a
                         href={`mailto:${currentEmail}`}
                         whileHover={{ scale: 1.03 }}
                         className="flex items-center space-x-2 hover:text-white transition-colors"
                     >
-                        <EmailIcon className="w-4 h-4 text-cyan-400" />
+                        <EmailIcon className="w-4 h-4 text-rose-400" />
                         <span className="font-normal tracking-wide">{currentEmail}</span>
                     </motion.a>
 
-                    {/* Divider */}
-                    <div className="h-4 w-[1px] bg-blue-700/60 hidden sm:block" />
+                    {/* Separator line */}
+                    <div className="h-4 w-[1px] bg-red-800/50 hidden sm:block" />
 
-                    {/* Social Media Icons */}
+                    {/* Social links */}
                     <div className="flex items-center space-x-3 sm:space-x-4">
                         {data.socialLinks.map((social) => {
                             const SocialIcon = iconMap[social.icon] || BsTwitter;

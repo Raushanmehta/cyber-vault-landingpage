@@ -1,16 +1,16 @@
 import siteData from "./site.json";
 
-// ── Root Schema Types ──
+// Root schema types
 export type RawSiteData = typeof siteData;
 export type CyberVaultSchema = typeof siteData.CyberVault;
 export type CyberVaultSections = CyberVaultSchema["sections"];
 export type CyberVaultTemplateComponents = CyberVaultSchema["templateComponents"];
 
-// Reference schema convention aliases
+// Schema aliases
 export type ServicesSchema = CyberVaultSchema;
 export type ServicesSections = CyberVaultSections;
 
-// ── Universal SectionProps Interface (ai-builder Standard) ──
+// Section props
 export interface SectionProps<T = unknown> {
   data?: T;
   className?: string;
@@ -20,7 +20,7 @@ export interface SectionProps<T = unknown> {
   onUpdate?: (newData: Partial<T>) => void;
 }
 
-// ── Strongly Typed Section Variant Data Models ──
+// Section models
 export type CyberVaultTopbarData = CyberVaultSections["topbar"]["variants"]["CyberVaultTopbar1"];
 export type CyberVaultNavbarData = CyberVaultSections["navbar"]["variants"]["CyberVaultNavbar1"];
 export type CyberVaultFooterData = CyberVaultSections["footer"]["variants"]["CyberVaultFooter1"];
@@ -29,33 +29,25 @@ export type CyberVaultAboutData = CyberVaultSections["about"]["variants"]["Cyber
 export type CyberVaultOurImpactData = CyberVaultSections["ourImpact"]["variants"]["CyberVaultOurImpact1"];
 export type CyberVaultServicesData = CyberVaultSections["services"]["variants"]["CyberVaultServices1"];
 export type CyberVaultProcessData = CyberVaultSections["process"]["variants"]["CyberVaultProcess1"];
-export type CyberVaultWhyChooseUsData = CyberVaultSections["whyChooseUs"]["variants"]["CyberVaultWhyChooseUs1"];
 export type CyberVaultTestimonialData = CyberVaultSections["testimonial"]["variants"]["CyberVaultTestimonial1"];
 export type CyberVaultTestimonialsData = CyberVaultTestimonialData;
-export type CyberVaultBlogData = CyberVaultSections["blog"]["variants"]["CyberVaultBlog1"];
-export type CyberVaultPortfolioData = CyberVaultSections["portfolio"]["variants"]["CyberVaultPortfolio1"];
-export type CyberVaultPageTopData = CyberVaultSections["pageTopSection"]["variants"]["CyberVaultPageTop1"];
-export type CyberVaultGetAQuoteData = CyberVaultSections["getAQuote"]["variants"]["CyberVaultGetAQuote1"];
-export type CyberVaultContactData = CyberVaultSections["contact"]["variants"]["CyberVaultContact1"];
+export type CyberVaultFaqData = CyberVaultSections["faq"]["variants"]["CyberVaultFaq1"];
+export type CyberVaultContactModalData = CyberVaultSections["contactModal"]["variants"]["CyberVaultContactModal1"];
 
-// Optional item types
+// Item types
 export type NavItem = CyberVaultNavbarData["navItems"][number];
 export type HeroStat = CyberVaultHeroData["floatingStats"][number];
 export type AboutFeature = CyberVaultAboutData["features"][number];
 export type OurImpactMetric = CyberVaultOurImpactData["stats"][number];
 export type ServiceItem = CyberVaultServicesData["servicesList"][number];
 export type ProcessStep = CyberVaultProcessData["steps"][number];
-export type WhyChooseUsItem = CyberVaultWhyChooseUsData["featurePillars"][number];
 export type TestimonialItem = CyberVaultTestimonialData["testimonials"][number];
-export type BlogPost = CyberVaultBlogData["blogPosts"][number];
-export type PortfolioItem = CyberVaultPortfolioData["projects"][number];
-export type ContactInfoCard = CyberVaultContactData["infoCards"][number];
+export type FaqItem = CyberVaultFaqData["faqs"][number];
 
-// ── Canonical Mapped Site Data Object ──
+// Site data map
 const sec = siteData.CyberVault.sections;
 
 export const siteMap = {
-  // Compatibility section shortcuts
   topbar: sec.topbar.variants.CyberVaultTopbar1,
   navbar: sec.navbar.variants.CyberVaultNavbar1,
   navItems: sec.navbar.variants.CyberVaultNavbar1.navItems,
@@ -65,16 +57,12 @@ export const siteMap = {
   ourImpact: sec.ourImpact.variants.CyberVaultOurImpact1,
   services: sec.services.variants.CyberVaultServices1,
   process: sec.process.variants.CyberVaultProcess1,
-  whyChooseUs: sec.whyChooseUs.variants.CyberVaultWhyChooseUs1,
   testimonial: sec.testimonial.variants.CyberVaultTestimonial1,
   testimonials: sec.testimonial.variants.CyberVaultTestimonial1,
-  blog: sec.blog.variants.CyberVaultBlog1,
-  portfolio: sec.portfolio.variants.CyberVaultPortfolio1,
-  pageTopSection: sec.pageTopSection.variants.CyberVaultPageTop1,
-  getAQuote: sec.getAQuote.variants.CyberVaultGetAQuote1,
-  contact: sec.contact.variants.CyberVaultContact1,
+  faq: sec.faq.variants.CyberVaultFaq1,
+  contactModal: sec.contactModal.variants.CyberVaultContactModal1,
 
-  // Compatibility section shortcuts
+  // Section shortcuts
   topbarData: sec.topbar.variants.CyberVaultTopbar1,
   navbarData: sec.navbar.variants.CyberVaultNavbar1,
   footerData: sec.footer.variants.CyberVaultFooter1,
@@ -83,16 +71,12 @@ export const siteMap = {
   ourImpactData: sec.ourImpact.variants.CyberVaultOurImpact1,
   servicesData: sec.services.variants.CyberVaultServices1,
   processData: sec.process.variants.CyberVaultProcess1,
-  whyChooseUsData: sec.whyChooseUs.variants.CyberVaultWhyChooseUs1,
   testimonialData: sec.testimonial.variants.CyberVaultTestimonial1,
   testimonialsData: sec.testimonial.variants.CyberVaultTestimonial1,
-  blogData: sec.blog.variants.CyberVaultBlog1,
-  portfolioData: sec.portfolio.variants.CyberVaultPortfolio1,
-  pageTopSectionData: sec.pageTopSection.variants.CyberVaultPageTop1,
-  getAQuoteData: sec.getAQuote.variants.CyberVaultGetAQuote1,
-  contactData: sec.contact.variants.CyberVaultContact1,
+  faqData: sec.faq.variants.CyberVaultFaq1,
+  contactModalData: sec.contactModal.variants.CyberVaultContactModal1,
 
-  // Root Tree
+  // Root tree
   CyberVault: siteData.CyberVault,
 };
 

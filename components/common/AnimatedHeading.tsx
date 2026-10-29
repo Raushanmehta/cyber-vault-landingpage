@@ -16,7 +16,7 @@ export default function AnimatedHeading({
   as = "h2",
   delay = 0,
 }: AnimatedHeadingProps) {
-  // If children is a string, split by words for Netzon's text-anime-style-2 effect
+  // Split words
   if (typeof children === "string") {
     const words = children.split(" ");
 
@@ -66,7 +66,7 @@ export default function AnimatedHeading({
     );
   }
 
-  // Fallback for complex JSX children
+  // Fallback heading
   const MotionTag = motion[as];
   return (
     <MotionTag

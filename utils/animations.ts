@@ -1,10 +1,6 @@
 import { Variants, Transition, TargetAndTransition } from "framer-motion";
 
-/**
- * -----------------------------------------------------------------------------
- * Transitions & Spring Configurations
- * -----------------------------------------------------------------------------
- */
+// Transition configs
 export const transitions: Record<string, Transition> = {
     fast: { duration: 0.2, ease: "easeOut" },
     normal: { duration: 0.5, ease: "easeOut" },
@@ -15,11 +11,7 @@ export const transitions: Record<string, Transition> = {
     gentle: { type: "spring", stiffness: 120, damping: 14 },
 };
 
-/**
- * -----------------------------------------------------------------------------
- * Fade In / Directional Variants
- * -----------------------------------------------------------------------------
- */
+// Fade variants
 export const fadeIn: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -64,9 +56,7 @@ export const fadeInRight: Variants = {
     },
 };
 
-/**
- * Dynamic Directional Fade Factory
- */
+// Directional fade
 export const fadeDirection = (
     direction: "up" | "down" | "left" | "right",
     distance = 30,
@@ -87,11 +77,7 @@ export const fadeDirection = (
     };
 };
 
-/**
- * -----------------------------------------------------------------------------
- * Scale & Zoom Variants
- * -----------------------------------------------------------------------------
- */
+// Scale variants
 export const scaleIn: Variants = {
     hidden: { opacity: 0, scale: 0.95 },
     visible: {
@@ -119,11 +105,7 @@ export const zoomIn: Variants = {
     },
 };
 
-/**
- * -----------------------------------------------------------------------------
- * Stagger Container & Child Variants (Lists, Card Grids, Badges)
- * -----------------------------------------------------------------------------
- */
+// Stagger variants
 export const containerVariants: Variants = {
     hidden: {},
     visible: {
@@ -193,11 +175,7 @@ export const staggerItemScale: Variants = {
     },
 };
 
-/**
- * -----------------------------------------------------------------------------
- * Micro-Interactions (Hover, Tap, Focus)
- * -----------------------------------------------------------------------------
- */
+// Micro interactions
 export const buttonHoverTap = {
     whileHover: { scale: 1.03 } as TargetAndTransition,
     whileTap: { scale: 0.97 } as TargetAndTransition,
@@ -218,11 +196,7 @@ export const cardHoverScale: { whileHover: TargetAndTransition } = {
     whileHover: { y: -6, scale: 1.02, transition: { duration: 0.3, ease: "easeOut" } },
 };
 
-/**
- * -----------------------------------------------------------------------------
- * Dropdowns, Accordions & Menus (AnimatePresence)
- * -----------------------------------------------------------------------------
- */
+// Menu variants
 export const dropdownVariants: Variants = {
     hidden: { opacity: 0, y: 8, scale: 0.98 },
     visible: {
@@ -254,11 +228,7 @@ export const accordionVariants: Variants = {
     },
 };
 
-/**
- * -----------------------------------------------------------------------------
- * Continuous / Looping Animations (Badges, Live Feed Dots, Floaters)
- * -----------------------------------------------------------------------------
- */
+// Loop animations
 export const floatingBadge = {
     animate: {
         y: [0, -8, 0],
@@ -294,11 +264,7 @@ export const ambientGlowPulse = {
     } as Transition,
 };
 
-/**
- * -----------------------------------------------------------------------------
- * Page Top & Breadcrumb Header Animations
- * -----------------------------------------------------------------------------
- */
+// Page animations
 export const pageTopContainerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -323,11 +289,7 @@ export const pageTopItemVariants: Variants = {
     },
 };
 
-/**
- * -----------------------------------------------------------------------------
- * Standard Viewport Observer Config
- * -----------------------------------------------------------------------------
- */
+// Viewport config
 export const defaultViewport = {
     once: true,
     margin: "-60px",

@@ -80,6 +80,10 @@ const serviceOptions = [
     'General Security Consultation',
 ];
 
+function GetInTouchModalDialog() {
+    const { isOpen, closeModal, selectedService } = useContactModal();
+    const modalData = siteMap.contactModal;
+
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');

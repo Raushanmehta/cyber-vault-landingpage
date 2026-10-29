@@ -10,7 +10,6 @@ import { BsInstagram, BsTwitter } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
 import { LiaLinkedin } from 'react-icons/lia';
 import { siteMap } from '@/data';
-import { useContactModal } from '@/components/modal/GetInTouchModal';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
     ShieldCheck,
@@ -23,28 +22,16 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 interface TopBarProps {
     email?: string;
-    contactUrl?: string;
-    onContactClick?: () => void;
 }
 
 export default function TopBar({
     email,
-    contactUrl,
-    onContactClick
 }: TopBarProps) {
     const data = siteMap.topbar;
-    const { openModal } = useContactModal();
     const currentEmail = email || data.contact.email;
-    const currentContactUrl = contactUrl || '/contact';
 
     const NotificationIcon = iconMap[data.notification.icon] || ShieldCheck;
     const EmailIcon = iconMap[data.contact.emailIcon] || Mail;
-
-    const handleLinkClick = (e: React.MouseEvent) => {
-        e.preventDefault();
-        openModal();
-        if (onContactClick) onContactClick();
-    };
 
     return (
         <div className="hidden md:block w-full bg-gradient-to-r from-[#0d0103] via-[#1a0407] to-[#0d0103] text-white text-xs sm:text-sm py-2.5 px-4 sm:px-8 border-b border-red-900/40 shadow-sm relative z-50 font-sans">

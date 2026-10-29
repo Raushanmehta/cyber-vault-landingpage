@@ -11,7 +11,6 @@ import { LiaLinkedin } from 'react-icons/lia';
 import Image from 'next/image';
 import Link from 'next/link';
 import { siteMap } from '@/data';
-import { useContactModal } from '@/components/modal/GetInTouchModal';
 
 const footerIconMap: Record<string, React.ComponentType<{ className?: string }>> = {
     FaFacebook,
@@ -28,7 +27,6 @@ const footerIconMap: Record<string, React.ComponentType<{ className?: string }>>
 
 export default function Footer() {
     const data = siteMap.footer;
-    const { openModal } = useContactModal();
 
     // Footer navigation
     const handleFooterLinkClick = (e?: React.MouseEvent<HTMLAnchorElement>, href?: string) => {

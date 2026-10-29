@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Settings, Users, ArrowRight } from 'lucide-react';
-import { useRouter, usePathname } from 'next/navigation';
 import AnimatedHeading from '@/components/common/AnimatedHeading';
 import { siteMap, type CyberVaultAboutData } from '@/data';
 import { useContactModal } from '@/components/modal/GetInTouchModal';
@@ -29,8 +28,6 @@ export default function AboutSection({
 }: AboutSectionProps = {}) {
     const data = propData || siteMap.about;
     const { openModal } = useContactModal();
-    const pathname = usePathname();
-    const router = useRouter();
     const BadgeIcon = aboutIconMap[data.experienceBadge.icon] || ShieldCheck;
     const ActionIcon = aboutIconMap[data.actionButton.icon] || ArrowRight;
 

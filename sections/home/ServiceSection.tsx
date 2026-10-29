@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import {
     Bug,
@@ -39,7 +38,6 @@ interface ServiceSectionProps {
 
 export default function ServicesSection({ data: propData, onEnquireClick }: ServiceSectionProps = {}) {
     const data = propData || siteMap.services;
-    const router = useRouter();
     const { openModal } = useContactModal();
 
     const handleCardClick = (service: ServiceItem) => {

@@ -27,7 +27,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${ramabhadra.variable} ${ramabhadra.className} h-full antialiased`}>
+      className={`${ramabhadra.variable} ${ramabhadra.className} h-full antialiased`}
+      suppressHydrationWarning>
       <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
         <ContactModalProvider>
           <SmoothScroll>
